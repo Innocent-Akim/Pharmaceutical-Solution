@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Avatar} from '@material-tailwind/react'
 
 const Navbar = () => {
     return (
