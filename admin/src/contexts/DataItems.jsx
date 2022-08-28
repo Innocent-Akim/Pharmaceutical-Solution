@@ -1,28 +1,28 @@
 import { MdOutlineDashboardCustomize } from "react-icons/md";
-
-const items = {};
-
-items.links = [
+import { GoBook } from "react-icons/go";
+import { BsPeople } from "react-icons/bs";
+import { TbFileDollar } from "react-icons/tb";
+import { GiSettingsKnobs } from "react-icons/gi";
+export const links = [
   {
     name: "Dashboard",
     icon: <MdOutlineDashboardCustomize />,
   },
   {
     name: "Cours",
-    icon: <MdOutlineDashboardCustomize />,
+    icon: <GoBook />,
   },
   {
     name: "Participants",
-    icon: <MdOutlineDashboardCustomize />,
+    icon: <BsPeople />,
   },
   {
     name: "Paiement",
-    icon: <MdOutlineDashboardCustomize />,
+    icon: <TbFileDollar />,
   },
   {
     name: "Settings",
-    icon: <MdOutlineDashboardCustomize />,
+    icon: <GiSettingsKnobs />,
   },
 ];
 
-export default items;
