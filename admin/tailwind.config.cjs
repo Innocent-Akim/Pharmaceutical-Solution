@@ -152,7 +152,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Open Sans', 'Poppins'],
-      body: ['Open Sans', 'Roboto'],
+      body: ['Open Sans', 'Poppins'],
     },
     fontWeight: {
       hairline: 100,

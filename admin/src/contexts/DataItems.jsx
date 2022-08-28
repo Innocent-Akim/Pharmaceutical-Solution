@@ -21,7 +21,7 @@ export const links = [
     icon: <TbFileDollar />,
   },
   {
-    name: "Settings",
+    name: "Parametres",
     icon: <GiSettingsKnobs />,
   },
 ];

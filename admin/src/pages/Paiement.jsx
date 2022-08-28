@@ -3,7 +3,7 @@ import React from 'react'
 const Paiement = () => {
   return (
     <div>
-      
+      Paiement
     </div>
   )
 }
