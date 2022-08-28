@@ -1,10 +1,26 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx,cjs}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: 'class',
   theme: {
     fontFamily: {
       display: ['Open Sans', 'sans-serif'],
-      body: ['Poppins-normal', 'sans-serif'],
+      body: ['Open Sans', 'sans-serif'],
+    },
+    fontWeight: {
+      hairline: 100,
+      'extra-light': 100,
+      thin: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
+      'extra-bold': 800,
+      black: 900,
     },
     extend: {
       fontSize: {
@@ -22,6 +38,7 @@ module.exports = {
       },
       borderColor: {
         color: 'rgba(0, 0, 0, 0.1)',
+        white:'#ffffff'
       },
       width: {
         400: '400px',
