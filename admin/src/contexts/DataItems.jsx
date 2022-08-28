@@ -7,22 +7,27 @@ export const links = [
   {
     name: "Dashboard",
     icon: <MdOutlineDashboardCustomize />,
+    route:'/dashboard'
   },
   {
     name: "Cours",
     icon: <GoBook />,
+    route:'/cours'
   },
   {
     name: "Participants",
     icon: <BsPeople />,
+    route:'/participants'
   },
   {
     name: "Paiement",
     icon: <TbFileDollar />,
+    route:'/paiement'
   },
   {
     name: "Parametres",
     icon: <GiSettingsKnobs />,
+    route:'/parametres'
   },
 ];
 
