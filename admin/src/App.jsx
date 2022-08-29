@@ -26,13 +26,13 @@ const App = () => {
             <span>Français</span>
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-2 gap-1">
-        <Siderbar />
-        <div className="flex justify-center fixed right-4 bottom-4 items-center cursor-pointer bg-blue-900 h-10 w-10 rounded-full hover:drop-shadow-sm ">
+      </div>  
+       <div className="flex justify-center fixed right-4 bottom-4 items-center cursor-pointer bg-blue-900 h-10 w-10 rounded-full hover:drop-shadow-sm ">
           <FiSettings className="text-white text-center items-center" />
         </div>
-        <div className=" ml-52">
+      <div className="flex justify-between">
+        <Siderbar />
+        <div className="ml-52 mr-10  w-full">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
