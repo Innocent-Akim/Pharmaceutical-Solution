@@ -1,7 +1,6 @@
 import React from "react";
-import { FaUsers } from "react-icons/fa";
-import { AiOutlineUsergroupDelete } from "react-icons/ai";
-const Card = ({title,count ,icon,icons,greyColor,backgroundColor}) => {
+
+const Card = ({title,count ,icon,icons,greyColor,backgroundColor, colortext}) => {
   return (
     <div className={`w-72 h-32 shadow-md border-4 ${greyColor} p-2 rounded-lg`}>
       <div>
@@ -15,7 +14,7 @@ const Card = ({title,count ,icon,icons,greyColor,backgroundColor}) => {
             <span className="font-normal text-14">{title}</span>
             <span className="font-bold text-lg">{count}</span>
           </div>
-          <div className={`text-5xl ${backgroundColor}`}>
+          <div className={`text-5xl ${colortext}`}>
             {icons}
           </div>
         </div>

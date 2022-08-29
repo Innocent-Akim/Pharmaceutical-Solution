@@ -3,8 +3,12 @@ import {Avatar} from '@material-tailwind/react'
 
 const Navbar = () => {
     return (
-        <div className='flex bg-main-dark-bg navbar w-full h-20'>
-
+        <div className='relative flex justify-between p-2'>
+        <div className='flex items-center justify-between p-2 border-b dark:border-primary-darker'>
+            <div className='inline-block text-2xl font-bold tracking-wider uppercase text-primary-dark text-light'>
+                Deconnection
+            </div>
+        </div>
         </div>
     )
 }
