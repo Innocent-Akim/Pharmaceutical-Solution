@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cardcours = () => {
   return (
-    <div>
+    <div className='s'>
       
     </div>
   )

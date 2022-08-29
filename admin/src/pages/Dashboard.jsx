@@ -7,7 +7,7 @@ import { BsBook } from "react-icons/bs";
 const Dashboard = () => {
   return (
     <>
-      <div className="mt-20 grid grid-cols-4 gap-3 p-2 place-content-between overflow-y-auto">
+      <div className="mt-20 mr-8 grid grid-cols-4 gap-3 p-2 place-content-between  overflow-y-auto bg-slate-50 w-screen">
         {/* flex-1 h-full overflow-x-hidden overflow-y-auto */}
         <Card
           title={"Participants"}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({title,count ,icon,icons,greyColor,backgroundColor, colortext}) => {
   return (
-    <div className={`w-72 h-32 shadow-md border-4 ${greyColor} p-2 rounded-lg`}>
+    <div className={`w-80 h-32 shadow-md border-4 ${greyColor} p-2 rounded-lg bg-white`}>
       <div>
         <div className={`flex ${greyColor} w-12 h-12  justify-center text-lg items-center text-center text-white rounded-lg`}>
           <div className={`w-7 h-7 ${backgroundColor} flex justify-center rounded-md`}>
