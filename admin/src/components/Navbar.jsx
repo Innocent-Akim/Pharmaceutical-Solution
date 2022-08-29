@@ -1,16 +1,15 @@
-import React from 'react';
-import {Avatar} from '@material-tailwind/react'
+import React from "react";
+import { Avatar } from "@material-tailwind/react";
 
 const Navbar = () => {
-    return (
-        <div className='relative flex justify-between p-2'>
-        <div className='flex items-center justify-between p-2 border-b dark:border-primary-darker'>
-            <div className='inline-block text-2xl font-bold tracking-wider uppercase text-primary-dark text-light'>
-                Deconnection
-            </div>
-        </div>
-        </div>
-    )
-}
+  return (
+    <div className="flex fixed z-10 bg-white w-screen h-24">
+    <div className="flex items-center gap-3 mt-4 ml-3 text-2xl font-extrabold tracking-tigh text-orange-600">
+      <SiInformatica />
+      <span>FORMATION</span>
+    </div>
+  </div>
+  );
+};
 
 export default Navbar;
