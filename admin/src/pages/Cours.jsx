@@ -4,7 +4,7 @@ import { Button } from "../components";
 import { useStateContext } from "../contexts/DataContexts";
 
 const Cours = () => {
-  const [setSelected] = useStateContext();
+  const {getSelected,setSelected} = useStateContext();
   return (
     <div className="mt-14 mr-8 grid grid-row-2">
       <div className="flex justify-between">
@@ -12,8 +12,9 @@ const Cours = () => {
           <Button title={"Development"} />
           <Button
             title={"Culture"}
-            onClick={() => {
-              setSelected(true);
+            bgColor={getSelected ? " border-blue-100" : "bg-blue-900"}
+            onClick={(prev) => {
+              setSelected(!prev);
             }}
           />
           <Button title={"Language"} />
