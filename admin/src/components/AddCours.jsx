@@ -6,20 +6,18 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
+import {useStateContext} from '../contexts/DataContexts';
  
 export default function AddCours() {
-  const [open, setOpen] = useState(false);
+  const {open,handleOpen,setOpen} =useStateContext()
  
-  const handleOpen = () => setOpen(!open);
+
  
   return (
     <Fragment>
-      <Button onClick={handleOpen} variant="gradient">
-        Open Dialog
-      </Button>
       <Dialog
         open={open}
-        handler={handleOpen}
+        handler={()=>setOpen}
         animate={{
           mount: { scale: 1, y: 0 },
           unmount: { scale: 0.9, y: -100 },
@@ -36,12 +34,12 @@ export default function AddCours() {
           <Button
             variant="text"
             color="red"
-            onClick={handleOpen}
+            onClick={()=>setOpen}
             className="mr-1"
           >
             <span>Cancel</span>
           </Button>
-          <Button variant="gradient" color="green" onClick={handleOpen}>
+          <Button variant="gradient" color="green" onClick={()=>setOpen}>
             <span>Confirm</span>
           </Button>
         </DialogFooter>

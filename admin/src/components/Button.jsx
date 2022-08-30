@@ -6,7 +6,7 @@ const Button = ({ title, onClick, bgColor }) => {
   const { getSelected } = useStateContext();
   return (
     <button
-      className={`flex items-center gap-1 h-8 hover: ease-in duration-300 text-center px-2 hover:bg-blue-900 hover:text-white rounded-full font-light justify-center border-solid border-2 ${bgColor}`}
+      className={` texflex items-center gap-1 sm:h-8 hover: ease-in duration-300 text-center px-2 hover:bg-blue-900 hover:text-white rounded-full font-light justify-center border-solid border-2 ${bgColor}`}
       onClick={onClick}
     >
       <BiCheck />

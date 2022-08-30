@@ -151,6 +151,13 @@ module.exports = withMT({
     },
   },
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     fontFamily: {
       display: ["Open Sans", "Poppins"],
       body: ["Open Sans", "Poppins"],
@@ -169,6 +176,7 @@ module.exports = withMT({
     extend: {
       fontSize: {
         14: "14px",
+        12: "12px",
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",

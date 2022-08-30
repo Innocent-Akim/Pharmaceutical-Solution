@@ -13,26 +13,28 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="flex fixed z-10 bg-blue-900 w-screen h-14 justify-between pr-10">
-        <div className="flex items-center gap-3 mt-4 ml-3 text-2xl font-extrabold tracking-tigh text-white">
+        <div className="hidden text-xs sm:flex items-center gap-3 mt-4 ml-3 sm:text-2xl font-extrabold tracking-tigh text-white">
           <SiInformatica />
           <span>FORMATION</span>
         </div>
-        <div className="flex items-center gap-5 mt-4 ml-3 text-xl font-extrabold tracking-tigh text-white ">
+        <SiInformatica className=" sm:hidden gap-3 mt-4 ml-3 text-white"/>
+        <div className="flex items-center gap-5 mt-4 ml-3 text-xs sm:text-xl font-extrabold tracking-tigh text-white ">
           <ImWhatsapp />
           <AiFillFacebook />
           <BsGoogle />
-          <div className="flex text-sm font-normal text-justify text-white gap-2 items-center cursor-pointer">
+          <GrLanguage className="sm:hidden" />
+          <div className="hidden sm:flex text-xs sm:text-sm font-normal text-justify text-white gap-2 items-center cursor-pointer">
             <GrLanguage className="text-white" />
             <span>Français</span>
           </div>
         </div>
       </div>  
-       <div className="flex justify-center fixed right-4 bottom-4 items-center cursor-pointer bg-blue-900 h-10 w-10 rounded-full hover:drop-shadow-sm ">
+       <div className="hidden md:flex justify-center fixed right-4 bottom-4 items-center cursor-pointer bg-blue-900 h-10 w-10 rounded-full hover:drop-shadow-sm ">
           <FiSettings className="text-white text-center items-center" />
         </div>
       <div className="flex justify-between">
         <Siderbar />
-        <div className="ml-52 mr-10  w-full">
+        <div className="ml-5 md:ml-52 mr-5 md:mr-10  w-full">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
